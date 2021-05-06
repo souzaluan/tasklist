@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 body{
-    display: flex;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -111,11 +110,13 @@ body{
     font-size: 16pt;
     height: 300px;
     width: 500px;
-    background-color: white;
+    background-color: #060504;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    z-index: 99;
 }
 
 .modal-box-container{
@@ -153,6 +154,29 @@ body{
     padding: 5px 20px;
     cursor: pointer;
 }
+.modal-box section.confirm input{
+    background-color: rgb(158, 255, 13);
+    border: none;
+    border-radius: 3px;
+}
+.modal-box section.confirm input:hover{
+    background-color: rgb(115, 255, 0);
+    color: #fff;
+}
+
+.modal-box section.confirm button{
+    background-color: transparent;
+    border: 1px solid red;
+    color: red;
+    border-radius: 3px;
+    opacity: 0.5;
+}
+.modal-box section.confirm button:hover{
+    border: 1px solid rgb(255, 0, 0);
+    color: red;
+    opacity: 1;
+}
+
 .modal-box .confirm {
     display: flex;
     justify-content: space-around;
