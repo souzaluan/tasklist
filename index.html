@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <link rel="shortcut icon" href="images/list.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="interface">
+        <header class="interface-header">
+            <h1>Task List</h1>
+        </header>
+
+        <section class="interface-section empty">
+            <p class="help"><em>Click + to add your tasks</em></p>
+        </section>
+
+        <section class="interface-buttons">
+            <div class="button addTask"><img src="images/plus(2).png" alt=""></div>
+            <div class="button removeTask"><img src="images/close(2).png" alt=""></div>
+        </section>
+    </main>
+
+    <article class="modal closed">
+        <div class="modal-box">
+            <div class="modal-box-container">
+                <section class="inputs">
+                    <form action="" class="modal-form">
+                        <label for="taskname">Task: <input type="text" id="taskname" data-rules="required"
+                                placeholder="max. 40 caracter" size="38" maxlength="40"></label>
+                        <label for="taskdate">Date of the conclusion: <input type="date" id="taskdate"
+                                data-rules="required"></label>
+                        <section class="confirm">
+                            <button class="cancel">Cancel</button>
+                            <input type="submit" value="Ok">
+                        </section>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </article>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
